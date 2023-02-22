@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import groovy.transform.CompileDynamic
 import groovy.util.logging.Slf4j
 import org.springframework.context.annotation.Bean
-import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.annotation.Primary
 import org.springframework.http.converter.HttpMessageConverter
@@ -17,7 +16,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
  */
 @EnableWebMvc
 @Configuration
-@ComponentScan(['com.github.jvalentino.foxtrot' ])
 @Slf4j
 @CompileDynamic
 @SuppressWarnings(['UnnecessarySetter'])
